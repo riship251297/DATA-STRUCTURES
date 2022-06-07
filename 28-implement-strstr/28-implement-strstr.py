@@ -12,8 +12,4 @@ class Solution:
         
         
        
-    # if needle in haystack:
-#         haystack = haystack.replace(needle,"_")
-#         return haystack.index("_")
-#     return -1
-        
+    
