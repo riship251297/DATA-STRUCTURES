@@ -6,11 +6,10 @@ class Solution:
         for i in nums:
             if i in freq:
                 freq[i] += 1
-                
             else:
                 freq[i] = 1
                 
-        for key,values in freq.items():
-            if values >= len(nums) / 2:
+        for key,value in freq.items():
+            if value >= len(nums) / 2:
                 return key
         
