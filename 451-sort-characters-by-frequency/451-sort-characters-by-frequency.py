@@ -8,12 +8,14 @@ class Solution:
             else:
                 freq[i] = 1
                 
-        op = sorted(freq.items(),key = lambda x:-x[1])
+        fre = sorted(freq.items(),key = lambda x:x[1],reverse=True)
+        op = []
         
-        lp = []
-        for i in op:
-            lp.append(i[0]*i[1])
+        print(fre)
         
-        return ''.join(lp)
-        
+        for key,value in fre:
+            op.append(key * value)
+            
+        return ''.join(op)
+                
         
