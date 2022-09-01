@@ -1,6 +1,5 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
-        op = []
         
         freq = {}
         
@@ -10,10 +9,11 @@ class Solution:
             else:
                 freq[i] = 1
                 
-        print(freq)
-                
+        maj_list = []
         for key,value in freq.items():
             if value > len(nums) / 3:
-                op.append(key)
+                maj_list.append(key)
                 
-        return op
+        
+        return maj_list
+        
