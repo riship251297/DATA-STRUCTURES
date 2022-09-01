@@ -13,6 +13,6 @@ class Solution:
             if value > len(nums) / 2:
                 if key == target:
                     return True
-                
+            
         return False
         
