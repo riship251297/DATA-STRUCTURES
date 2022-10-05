@@ -9,8 +9,9 @@ class Solution:
             else:
                 freq[i] = 1
                 
-        for key,value in freq.items():
-            if value >= 2:
+        for key,values in freq.items():
+            if values >= 2:
                 return True
             
         return False
+        
