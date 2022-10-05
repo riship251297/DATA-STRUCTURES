@@ -2,18 +2,18 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
         
         freq = {}
+        n = len(nums) / 3
         
+        ele = []
         for i in nums:
             if i in freq:
                 freq[i] += 1
             else:
                 freq[i] = 1
                 
-        maj_list = []
-        for key,value in freq.items():
-            if value > len(nums) / 3:
-                maj_list.append(key)
+        for key,values in freq.items():
+            if values > n:
+                ele.append(key)
                 
-        
-        return maj_list
+        return ele
         
