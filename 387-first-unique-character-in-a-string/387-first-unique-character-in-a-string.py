@@ -7,9 +7,11 @@ class Solution:
                 freq[i] += 1
             else:
                 freq[i] = 1
+                
+        for key,values in freq.items():
+            if values == 1:
+                index_value = s.index(key)
+                return index_value
         
-        for k,v in freq.items():
-            if v == 1:
-                return s.index(k)
-            
         return -1
+        
