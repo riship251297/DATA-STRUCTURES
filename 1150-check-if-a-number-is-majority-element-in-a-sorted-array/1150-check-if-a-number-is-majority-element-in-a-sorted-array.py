@@ -1,6 +1,5 @@
 class Solution:
     def isMajorityElement(self, nums: List[int], target: int) -> bool:
-        
         freq = {}
         
         for i in nums:
@@ -9,10 +8,10 @@ class Solution:
             else:
                 freq[i] = 1
                 
-        for key,value in freq.items():
-            if value > len(nums) / 2:
+        for key,values in freq.items():
+            if values > len(nums) / 2:
                 if key == target:
                     return True
-            
+                
         return False
         
