@@ -1,14 +1,13 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
-        
-        fre = {}
+        difference = {}
         
         for i in range(len(nums)):
-            difference = target - nums[i]
+            diff = target - nums[i]
             
-            if difference in fre:
-                return [i,fre[difference]]
+            if diff in difference:
+                return [i,difference[diff]]
             
-            fre[nums[i]] = i
+            difference[nums[i]] = i
         
