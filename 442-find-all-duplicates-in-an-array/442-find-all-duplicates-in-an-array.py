@@ -8,11 +8,11 @@ class Solution:
                 freq[i] += 1
             else:
                 freq[i] = 1
+             
+        ele = []
+        for key,values in freq.items():
+            if values == 2:
+                ele.append(key)
                 
-        op = []        
-        for k,v in freq.items():
-            if v == 2:
-                op.append(k)
-                
-        return op
+        return ele
         
