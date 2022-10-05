@@ -13,3 +13,4 @@ class Solution:
         for key,values in freq.items():
             if values > len(nums) / 2:
                 return key
+        
