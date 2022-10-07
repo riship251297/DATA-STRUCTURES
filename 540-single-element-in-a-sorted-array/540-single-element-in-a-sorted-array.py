@@ -1,6 +1,7 @@
 class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
         
+        
         freq = {}
         
         for i in nums:
@@ -8,8 +9,8 @@ class Solution:
                 freq[i] += 1
             else:
                 freq[i] = 1
-        
-        for k,v in freq.items():
-            if v == 1:
-                return k
+                
+        for key,values in freq.items():
+            if values == 1:
+                return key
         
